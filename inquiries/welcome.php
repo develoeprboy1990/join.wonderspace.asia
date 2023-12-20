@@ -36,8 +36,8 @@ if (!empty($_REQUEST['platform'])) {
 <body class="page-wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-<a class="navbar-brand" href="https://www.wonderfest.my/">
-            <img class="img-responsive" src="images/WF_Logo-03.webp">
+          <a class="navbar-brand" href="https://www.wonderfest.my/">
+            <img class="img-responsive" src="images/WS_logo.png">
           </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
