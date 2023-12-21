@@ -132,7 +132,7 @@ if (!empty($_REQUEST['platform'])) {
 
             <div class="mb-2 row">
               <label for="inputPassword" class="col-sm-2 col-md-2 col-form-label"></label>
-              <div class="col-sm-4"><button type="submit" class="btn btn-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatApp</button>
+              <div class="col-sm-4"><button type="submit" class="btn btn-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</button>
 
               </div>
             </div>
