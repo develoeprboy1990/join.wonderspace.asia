@@ -181,7 +181,7 @@ $show_pagination = $this->show_pagination;
                                                     <th  class="td-event_venue"> Event Venue</th>
 
                                                     <th  class="td-total_pax"> Total Pax</th>
-                                                    <th  class="td-event_type"> Event Space</th>
+                                                    <th  class="td-event_type"> Event</th>
                                                     <th  class="td-budget"> Budget</th>
                                                     
                                                     <th  class="td-datetime"> Datetime</th>

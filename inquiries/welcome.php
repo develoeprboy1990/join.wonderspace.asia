@@ -29,6 +29,7 @@ if (!empty($_REQUEST['platform'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome to WonderSpace</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -109,7 +110,7 @@ if (!empty($_REQUEST['platform'])) {
             </div>
 
           <div class="mb-3 row">
-              <label for="inputPassword" class="col-sm-2 col-md-2 col-form-label">Event Space:</label>
+              <label for="inputPassword" class="col-sm-2 col-md-2 col-form-label">Event:</label>
               <div class="col-sm-4 col-md-4">
                 <select required="" class="form-select" aria-label="Default select example" name="event_type" id="event_type">
                   <option value="G Glass House @ Klang">G Glass House @ Klang</option>
@@ -131,7 +132,7 @@ if (!empty($_REQUEST['platform'])) {
 
             <div class="mb-2 row">
               <label for="inputPassword" class="col-sm-2 col-md-2 col-form-label"></label>
-              <div class="col-sm-4"><button type="submit" class="btn btn-primary">Submit</button>
+              <div class="col-sm-4"><button type="submit" class="btn btn-success"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatApp</button>
 
               </div>
             </div>

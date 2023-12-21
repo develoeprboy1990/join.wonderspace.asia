@@ -111,7 +111,7 @@ $show_export_btn = $this->show_export_btn;
 
 
                                     <tr  class="td-prospect_phone">
-                                        <th class="title"> Event Space:</th>
+                                        <th class="title"> Event:</th>
                                         <td class="value"> <?php echo $data['event_type']; ?></td>
                                     </tr>
 
