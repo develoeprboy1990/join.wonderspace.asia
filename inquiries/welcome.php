@@ -93,14 +93,14 @@ if (!empty($_REQUEST['platform'])) {
                 <input type="text" class="form-control" id="event_date" name="event_date" value="" required>
               </div>
             </div>
-
+<!-- 
             <div class="mb-3 row">
               <label for="prospect_name" class="col-sm-2 col-md-2 col-form-label">Event Venue:</label>
               <div class="col-sm-4 col-md-4">
                 <input type="text" class="form-control" id="event_venue" name="event_venue" value="" required>
               </div>
             </div>
-
+ -->
 
               <div class="mb-3 row">
               <label for="prospect_name" class="col-sm-2 col-md-2 col-form-label">Number of Pax:</label>
@@ -110,13 +110,29 @@ if (!empty($_REQUEST['platform'])) {
             </div>
 
           <div class="mb-3 row">
-              <label for="inputPassword" class="col-sm-2 col-md-2 col-form-label">Event:</label>
+              <label for="inputPassword" class="col-sm-2 col-md-2 col-form-label">Event Space:</label>
               <div class="col-sm-4 col-md-4">
                 <select required="" class="form-select" aria-label="Default select example" name="event_type" id="event_type">
                   <option value="G Glass House @ Klang">G Glass House @ Klang</option>
                   <option value="Lena Hall @ Kajang">Lena Hall @ Kajang</option>
                   <option value="Lilla Rainforest Retreat @ Hulu Langat">Lilla Rainforest Retreat @ Hulu Langat</option>
                 </select>
+              </div>
+            </div>
+
+             <div class="mb-3 row">
+              <label for="prospect_name" class="col-sm-2 col-md-2 col-form-label">Event Services:</label>
+              <div class="col-sm-4 col-md-4">
+                
+                <input type="checkbox"  name="event_service[]" value="Venu Rental" >&nbsp;Venu Rental<br>
+                <input type="checkbox"  name="event_service[]" value="Decoration" >&nbsp;Decoration<br>
+                <input type="checkbox"  name="event_service[]" value="Catering" >&nbsp;Catering<br>
+                <input type="checkbox"  name="event_service[]" value="Sound System" >&nbsp;Sound System<br>
+                <input type="checkbox"  name="event_service[]" value="Projector" >&nbsp;Projector<br>
+                <input type="checkbox"  name="event_service[]" value="Alcohol" >&nbsp;Alcohol<br>
+                <input type="checkbox"  name="event_service[]" value="Other" id="other_service" >&nbsp;Other  &nbsp;&nbsp;
+                <input type="text" class="form-control" id="other_service_detial" name="other_service_detial" value="" style="display: none;">
+
               </div>
             </div>
 
@@ -157,6 +173,20 @@ if (!empty($_REQUEST['platform'])) {
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <!--   <script src="main.js"></script> -->
+
+<script type="text/javascript">
+
+  $("#other_service").change(function() {
+    if(this.checked) {
+      $('#other_service_detial').show();
+    }
+  else
+    {
+        $('#other_service_detial').hide();  
+      
+    }
+});
+</script>
 </body>
  
 
