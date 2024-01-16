@@ -1,0 +1,3 @@
+DB Queries
+/**************************16-01-2024*********************************/
+ALTER TABLE `inquiry` ADD `event_services` VARCHAR(255) NULL DEFAULT NULL AFTER `event_type`, ADD `other_service_detial` VARCHAR(255) NULL DEFAULT NULL AFTER `event_services`; 

@@ -109,21 +109,26 @@ $show_export_btn = $this->show_export_btn;
                                         <td class="value"> <?php echo $data['total_pax']; ?></td>
                                     </tr>
 
+                                    <tr  class="td-prospect_phone">
+                                        <th class="title"> Event Space:</th>
+                                        <td class="value"> <?php echo $data['event_type']; ?></td>
+                                    </tr>
 
                                     <tr  class="td-prospect_phone">
-                                        <th class="title"> Event:</th>
-                                        <td class="value"> <?php echo $data['event_type']; ?></td>
+                                        <th class="title">  Event Services:</th>
+                                        <td class="value"> 
+                                            <?php 
+                                            echo $data['event_services'];
+                                            if($data['other_service_detial']!='')
+                                            echo '<br>'.$data['other_service_detial'];
+
+                                            ?></td>
                                     </tr>
 
                                     <tr  class="td-prospect_phone">
                                         <th class="title">  Your Budget:</th>
                                         <td class="value"> <?php echo $data['budget']; ?></td>
                                     </tr>
-
-                                    
-                                    
-                                    
-                                    
                                    
                                     <tr  class="td-platform">
                                         <th class="title"> Platform: </th>

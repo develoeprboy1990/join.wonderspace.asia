@@ -55,6 +55,10 @@ class InquiryController extends SecureController
 
 			"event_type",
 
+			"event_services",
+
+			"other_service_detial",
+
 			"budget",
 
 			"platform",
@@ -97,6 +101,10 @@ class InquiryController extends SecureController
 
 				inquiry.event_type LIKE ? OR 
 
+				inquiry.event_services LIKE ? OR 
+
+				inquiry.other_service_detial LIKE ? OR 
+
 				inquiry.budget LIKE ? OR  
 
 				inquiry.datetime LIKE ? OR 
@@ -119,7 +127,7 @@ class InquiryController extends SecureController
 
 			$search_params = array(
 
-				"%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%"
+				"%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%", "%$text%"
 
 			);
 
@@ -245,6 +253,10 @@ class InquiryController extends SecureController
 
 			"event_type",
 
+			"event_services",
+
+			"other_service_detial",
+
 			"budget",
 
 			"platform",
@@ -328,7 +340,7 @@ class InquiryController extends SecureController
 
 			//fillable fields
 
-			$fields = $this->fields = array("prospect_name", "prospect_phone", "event_date", "event_venue", "total_pax", "event_type", "budget", "platform", "datetime", "assign_agent_name", "handled");
+			$fields = $this->fields = array("prospect_name", "prospect_phone", "event_date", "event_venue", "total_pax", "event_type","event_services","other_service_detial","budget", "platform", "datetime", "assign_agent_name", "handled");
 
 			$postdata = $this->format_request_data($formdata);
 
@@ -364,6 +376,10 @@ class InquiryController extends SecureController
 
 				'event_type' => 'sanitize_string',
 
+				'event_services' => 'sanitize_string',
+
+				'other_service_detial' => 'sanitize_string',
+
 				'budget' => 'sanitize_string',
 
 				'handled' => 'sanitize_string',
@@ -385,7 +401,8 @@ class InquiryController extends SecureController
 				$event_type = $modeldata['event_type'];
 				$event_date = $modeldata['event_date'];
 				$total_pax = $modeldata['total_pax'];
-
+				$event_services = $modeldata['event_services'];
+				$other_service_detial = $modeldata['other_service_detial'];
 
 
 				$agentcount = $db->rawQueryValue("SELECT COUNT(id) FROM agent WHERE status1 = '0' LIMIT 1");
@@ -496,7 +513,7 @@ class InquiryController extends SecureController
 
 		//editable fields
 
-		$fields = $this->fields = array("id", "prospect_name", "prospect_phone","event_date","event_venue","total_pax","event_type","budget", "select_location", "platform", "remark", "handled", "status", "total_amount");
+		$fields = $this->fields = array("id", "prospect_name", "prospect_phone","event_date","event_venue","total_pax","event_type","event_services","other_service_detial","budget", "select_location", "platform", "remark", "handled", "status", "total_amount");
 
 		if ($formdata) {
 
@@ -523,6 +540,10 @@ class InquiryController extends SecureController
 				'total_pax'=> 'sanitize_string',
 				
 				'event_type'=> 'sanitize_string',
+
+				'event_services'=> 'sanitize_string',
+
+				'other_service_detial'=> 'sanitize_string',
 				
 				'budget'=> 'sanitize_string',
 

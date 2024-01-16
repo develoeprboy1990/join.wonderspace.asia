@@ -181,7 +181,8 @@ $show_pagination = $this->show_pagination;
                                                     <th  class="td-event_venue"> Event Venue</th>
 
                                                     <th  class="td-total_pax"> Total Pax</th>
-                                                    <th  class="td-event_type"> Event</th>
+                                                    <th  class="td-event_type"> Event Space</th>
+                                                    <th  class="td-event_services"> Event Services</th>
                                                     <th  class="td-budget"> Budget</th>
                                                     
                                                     <th  class="td-datetime"> Datetime</th>
@@ -235,6 +236,14 @@ $show_pagination = $this->show_pagination;
 
                                                     <td class="td-total_pax"> <?php echo $data['total_pax']; ?></td>
                                                     <td class="td-event_type"> <?php echo $data['event_type']; ?></td>
+                                                    <td class="td-event_services"> 
+                                                        <?php 
+                                                        echo $data['event_services']; 
+                                                        if($data['other_service_detial']!='')
+                                                        echo '<br>'.$data['other_service_detial']; 
+                                                            
+                                                        ?>                                                       
+                                                    </td>
                                                     <td class="td-budget"> <?php echo $data['budget']; ?></td>
                                                     
 

@@ -69,8 +69,8 @@ if (!empty($_REQUEST['platform'])) {
       <div class="col-sm-2 col-lg-2"></div>
       <div class="col-sm-12 col-lg-12">
         <p><h3>Hi please fill this WhatsApp form <br> and our WonderTeam will be in touch .</h3></p>
-        <!-- <form method="post" action="http://localhost/shah/leads/join.wonderspace.asia/inquiry/add"> -->
-          <form method="post" action="https://join.wonderspace.asia/inquiry/add">
+        <form method="post" action="http://localhost/shah/leads/join.wonderspace.asia/inquiry/add"> 
+          <!-- <form method="post" action="https://join.wonderspace.asia/inquiry/add"> -->
           <input type="hidden" name="platform" value="<?php echo $platform?>">
           <div>
             <div class="mb-3 row">
@@ -124,13 +124,13 @@ if (!empty($_REQUEST['platform'])) {
               <label for="prospect_name" class="col-sm-2 col-md-2 col-form-label">Event Services:</label>
               <div class="col-sm-4 col-md-4">
                 
-                <input type="checkbox"  name="event_service[]" value="Venu Rental" >&nbsp;Venu Rental<br>
-                <input type="checkbox"  name="event_service[]" value="Decoration" >&nbsp;Decoration<br>
-                <input type="checkbox"  name="event_service[]" value="Catering" >&nbsp;Catering<br>
-                <input type="checkbox"  name="event_service[]" value="Sound System" >&nbsp;Sound System<br>
-                <input type="checkbox"  name="event_service[]" value="Projector" >&nbsp;Projector<br>
-                <input type="checkbox"  name="event_service[]" value="Alcohol" >&nbsp;Alcohol<br>
-                <input type="checkbox"  name="event_service[]" value="Other" id="other_service" >&nbsp;Other  &nbsp;&nbsp;
+                <input type="checkbox"  name="event_services[]" value="Venu Rental" >&nbsp;Venu Rental<br>
+                <input type="checkbox"  name="event_services[]" value="Decoration" >&nbsp;Decoration<br>
+                <input type="checkbox"  name="event_services[]" value="Catering" >&nbsp;Catering<br>
+                <input type="checkbox"  name="event_services[]" value="Sound System" >&nbsp;Sound System<br>
+                <input type="checkbox"  name="event_services[]" value="Projector" >&nbsp;Projector<br>
+                <input type="checkbox"  name="event_services[]" value="Alcohol" >&nbsp;Alcohol<br>
+                <input type="checkbox"  name="event_services[]" value="Other" id="other_service" >&nbsp;Other  &nbsp;&nbsp;
                 <input type="text" class="form-control" id="other_service_detial" name="other_service_detial" value="" style="display: none;">
 
               </div>

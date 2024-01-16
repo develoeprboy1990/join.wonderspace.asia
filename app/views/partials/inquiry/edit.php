@@ -108,7 +108,7 @@ $redirect_to = $this->redirect_to;
                                 <div class="form-group ">
                                     <div class="row">
                                         <div class="col-sm-4">
-                                            <label class="control-label" for="datetime">Event<span class="text-danger">*</span></label>
+                                            <label class="control-label" for="datetime">Event Space<span class="text-danger">*</span></label>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="input-group">
@@ -123,6 +123,51 @@ $redirect_to = $this->redirect_to;
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="control-label" for="datetime">Event Services<span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <?php $event_services = explode(',',$data['event_services']); ?>
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Venu Rental" 
+                                                    <?php echo (in_array("Venu Rental", $event_services) ? 'checked' : null) ?> >&nbsp;Venu Rental
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Decoration" <?php echo (in_array("Decoration", $event_services) ? 'checked' : null) ?>>&nbsp;Decoration
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Catering" <?php echo (in_array("Catering", $event_services) ? 'checked' : null) ?>>&nbsp;Catering
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Sound System" <?php echo (in_array("Sound System", $event_services) ? 'checked' : null) ?>>&nbsp;Sound System
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Projector" <?php echo (in_array("Projector", $event_services) ? 'checked' : null) ?>>&nbsp;Projector
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Alcohol" <?php echo (in_array("Alcohol", $event_services) ? 'checked' : null) ?>>&nbsp;Alcohol
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Other" id="other_service" <?php echo (in_array("Other", $event_services) ? 'checked' : null) ?>>&nbsp;Other 
+                                                </div>
+                                                 <input id="ctrl-other_service_detial"  value="<?php  echo $data['other_service_detial']; ?>" type="text" placeholder="Enter Other Details"  required="" name="other_service_detial"  class="form-control " />
+                                                
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
 
                                 <div class="form-group ">
