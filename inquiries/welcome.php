@@ -69,8 +69,8 @@ if (!empty($_REQUEST['platform'])) {
       <div class="col-sm-2 col-lg-2"></div>
       <div class="col-sm-12 col-lg-12">
         <p><h3>Hi please fill this WhatsApp form <br> and our WonderTeam will be in touch .</h3></p>
-        <form method="post" action="http://localhost/shah/leads/join.wonderspace.asia/inquiry/add"> 
-          <!-- <form method="post" action="https://join.wonderspace.asia/inquiry/add"> -->
+        <!-- <form method="post" action="http://localhost/shah/leads/join.wonderspace.asia/inquiry/add">  -->
+          <form method="post" action="https://join.wonderspace.asia/inquiry/add">
           <input type="hidden" name="platform" value="<?php echo $platform?>">
           <div>
             <div class="mb-3 row">
