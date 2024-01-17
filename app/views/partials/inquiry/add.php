@@ -102,7 +102,7 @@ $redirect_to = $this->redirect_to;
                                 <div class="form-group ">
                                     <div class="row">
                                         <div class="col-sm-4">
-                                            <label class="control-label" for="datetime">Event<span class="text-danger">*</span></label>
+                                            <label class="control-label" for="datetime">Event Space<span class="text-danger">*</span></label>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="input-group">
@@ -115,6 +115,47 @@ $redirect_to = $this->redirect_to;
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="form-group ">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="control-label" for="datetime">Event Services<span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Venu Rental" >&nbsp;Venu Rental
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Decoration" >&nbsp;Decoration
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Catering" >&nbsp;Catering
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Sound System" >&nbsp;Sound System
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Projector" >&nbsp;Projector
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Alcohol" >&nbsp;Alcohol
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <input type="checkbox"  name="event_services[]" value="Other" id="other_service" >&nbsp;Other 
+                                                </div>
+                                                 <input id="ctrl-other_service_detial"  value="" type="text" placeholder="Enter Other Details"  required="" name="other_service_detial"  class="form-control " />
+                                                
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 <div class="form-group ">
                                     <div class="row">
